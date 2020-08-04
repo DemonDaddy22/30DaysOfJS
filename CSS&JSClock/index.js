@@ -3,6 +3,9 @@ const secondHand = document.querySelector('.second-hand');
 const minuteHand = document.querySelector('.minute-hand');
 const hourHand = document.querySelector('.hour-hand');
 
+// select digital-clock
+const digitalClock = document.getElementById('digital-clock');
+
 // counters will prevent each hand to rewind back after completion of a complete rotation
 // rather than going back to 90 deg after every rotation, counters will enable to add 360 degrees after every rotation for continuous hand movement
 let secondCounter = 0, minuteCounter = 0;
@@ -36,6 +39,13 @@ function setDate() {
     const hoursToDegrees = ((hours / 12) * 360) + 90;
 
     hourHand.style.transform = `translateX(-100%) rotate(${hoursToDegrees}deg)`;
+
+    // for digital clock
+    const digitalHours = hours > 12 ? hours % 12 : hours;
+    const timeFormat = hours < 12 ? 'AM' : 'PM';
+    const time = `${digitalHours} : ${minutes} : ${seconds} ${timeFormat}`;
+
+    digitalClock.innerHTML = time;
 }
 
 setInterval(setDate, 1000);
