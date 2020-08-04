@@ -5,7 +5,7 @@ const hourHand = document.querySelector('.hour-hand');
 
 // counters will prevent each hand to rewind back after completion of a complete rotation
 // rather than going back to 90 deg after every rotation, counters will enable to add 360 degrees after every rotation for continuous hand movement
-let secondCounter = 0, minuteCounter = 0, hourCounter = 0;
+let secondCounter = 0, minuteCounter = 0;
 
 function setDate() {
     const now = new Date();
@@ -13,11 +13,10 @@ function setDate() {
     startOfDay.setHours(0, 0, 0, 0);
 
     // this will reset the counters at the start of each day
-    if (startOfDay.getTime() === now.getTime()) {
+    if (startOfDay.getDay() === now.getDay() && startOfDay.getHours() === now.getHours() && startOfDay.getMinutes() === now.getMinutes()) {
         console.log(secondCounter);
         secondCounter = 0;
         minuteCounter = 0;
-        hourCounter = 0;
         console.log(secondCounter);
     }
 
@@ -34,8 +33,7 @@ function setDate() {
     minuteHand.style.transform = `translateX(-100%) rotate(${minutesToDegrees}deg)`;
 
     const hours = now.getHours();
-    hourCounter = hours === 0 ? hourCounter + 1 : hourCounter;
-    const hoursToDegrees = (360 * hourCounter) + ((hours / 12) * 360) + 90;
+    const hoursToDegrees = ((hours / 12) * 360) + 90;
 
     hourHand.style.transform = `translateX(-100%) rotate(${hoursToDegrees}deg)`;
 }

@@ -35,3 +35,11 @@ body {
     transition: all 0.05s cubic-bezier(0.1, 2.7, 0.58, 1);
 }
 
+.minute-hand {
+    width: 80px;
+}
+
+.hour-hand {
+    width: 50px;
+}
+
