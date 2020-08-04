@@ -8,4 +8,30 @@ body {
     overflow: hidden;
     height: 100vh;
     width: 100vw;
+    position: relative;
 }
+
+#clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 16px double #FFFFFF;
+}
+
+.hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-100%) rotate(90deg);
+    width: 90px;
+    height: 6px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    transform-origin: 100%;
+    transition: all 0.05s cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
