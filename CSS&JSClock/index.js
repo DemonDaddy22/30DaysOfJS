@@ -14,9 +14,11 @@ function setDate() {
 
     // this will reset the counters at the start of each day
     if (startOfDay.getTime() === now.getTime()) {
+        console.log(secondCounter);
         secondCounter = 0;
         minuteCounter = 0;
         hourCounter = 0;
+        console.log(secondCounter);
     }
 
     const seconds = now.getSeconds();
