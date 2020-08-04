@@ -43,7 +43,7 @@ function setDate() {
     // for digital clock
     const digitalHours = hours > 12 ? hours % 12 : hours;
     const timeFormat = hours < 12 ? 'AM' : 'PM';
-    const time = `${digitalHours} : ${minutes} : ${seconds} ${timeFormat}`;
+    const time = `${digitalHours}:${minutes}:${seconds} ${timeFormat}`;
 
     digitalClock.innerHTML = time;
 }
