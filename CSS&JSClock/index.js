@@ -17,10 +17,10 @@ function setDate() {
 
     // this will reset the counters at the start of each day
     if (startOfDay.getDay() === now.getDay() && startOfDay.getHours() === now.getHours() && startOfDay.getMinutes() === now.getMinutes()) {
-        console.log(secondCounter);
+        console.log("Start counter: " + secondCounter + " and time: " + now);
         secondCounter = 0;
         minuteCounter = 0;
-        console.log(secondCounter);
+        console.log("End counter: " + secondCounter + " and time: " + now);
     }
 
     const seconds = now.getSeconds();
