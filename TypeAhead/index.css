@@ -1,4 +1,67 @@
 body {
     margin: 0;
-    background-color: #f0e057;
+    background-color: #ffd231;
+    font-size: 1.25rem;
+    font-family: 'helvetica neue';
+}
+
+#input-container {
+    width: 400px;
+    margin: 60px auto;
+}
+
+.search {
+    position: relative;
+    top: 3px;
+    width: 120%;
+    left: -10%;
+    outline: none;
+    padding: 20px;
+    border: 8px solid #F5F5F5;
+    color: #212121;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 2rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+    z-index: 1;
+}
+
+.suggestions {
+    left: 6%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.suggestions li {
+    list-style: none;
+    color: #212121;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+    border-bottom: 1px solid #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    transition: background 0.2s;
+}
+
+.suggestions li:nth-child(even) {
+    transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+    background: linear-gradient(to bottom, #ffffff 0%, #EFEFEF 100%);
+}
+
+.suggestions li:nth-child(odd) {
+    transform: perspective(100px) rotateX(-3deg) translateY(3px) scale(1.001);
+    background: linear-gradient(to bottom, #ffffff 0%, #EFEFEF 100%);
+}
+
+.population {
+    font-size: 1rem;
+}
+
+.highlight {
+    background-color: #ffd231;
 }
