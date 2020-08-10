@@ -12,6 +12,8 @@
 
 - *Day 05* - **Flex Panels Image Gallery &nbsp;🌆**: Full screen vertical image gallery with animations. The key things which can be learned here are the use of ```display: flex```, ```align-items``` and ```justify-content```, to perfectly align your content on a webpage, one can even make use of flexbox(es) inside another flexbox for horizontal and vertical alignment of elements, and how simple transitions can add so much more to the UX of a webpage. Rather than using the predefined animation paths (like linear, ease-in-out, etc), try creating custom cubic-bezier paths to achieve fun and unique transitions and the best way to try this is using the browser console.
 
-- *Day 06* - **Type Ahead &nbsp;🔍** Search box which searches through a list of objects. The key things which can be learned here are the use of inbuilt ```fetch()``` function for getting API response and ```regex``` to search the input string pattern inside a string. Also, a bit of styling gives a modern and appealing look to the otherwise boring input field.
+- *Day 06* - **Type Ahead &nbsp;🔍**: Search box which searches through a list of objects. The key things which can be learned here are the use of inbuilt ```fetch()``` function for getting API response and ```regex``` to search the input string pattern inside a string. Also, a bit of styling gives a modern and appealing look to the otherwise boring input field.
 
-- *Day 07* - **Array Cardio 2 &nbsp;💪** Went over few more important array functions.
+- *Day 07* - **Array Cardio 2 &nbsp;💪**: Went over few more important array functions.
+
+- *Day 08* - **HTML Canvas &nbsp; 🖌**: Window sized canvas over which one can draw multi-coloured strokes. The key things which can be learned from this exercise are the creation of ```canvas```, which is basically used for drawing graphics, and how one can use JS to do endless things on and with canvas.
