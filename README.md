@@ -17,3 +17,5 @@
 - *Day 07* - **Array Cardio 2 &nbsp;💪**: Went over few more important array functions.
 
 - *Day 08* - **HTML Canvas &nbsp; 🖌**: Window sized canvas over which one can draw multi-coloured strokes. The key things which can be learned from this exercise are the creation of ```canvas```, which is basically used for drawing graphics, and how one can use JS to do endless things on and with canvas.
+
+- *Day 09* - **Dev Tools Tricks &nbsp;⛏**: Covered some essential console methods which can prove useful for debugging and logging values.
