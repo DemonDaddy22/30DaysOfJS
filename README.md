@@ -19,3 +19,5 @@
 - *Day 08* - **HTML Canvas &nbsp; 🖌**: Window sized canvas over which one can draw multi-coloured strokes. The key things which can be learned from this exercise are the creation of ```canvas```, which is basically used for drawing graphics, and how one can use JS to do endless things on and with canvas.
 
 - *Day 09* - **Dev Tools Tricks &nbsp;⛏**: Covered some essential console methods which can prove useful for debugging and logging values.
+
+- *Day 10* - **Check Multiple Checkboxes &nbsp;☑**: Check box list with the functionality to check multiple boxes at once by holding down shift key. The main thing which can be learned here from this exercise is how to write the logic to select multiple select boxes in one go. Modifications to the logic, can result in more precise selections.
