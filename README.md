@@ -21,3 +21,5 @@
 - *Day 09* - **Dev Tools Tricks &nbsp;⛏**: Covered some essential console methods which can prove useful for debugging and logging values.
 
 - *Day 10* - **Check Multiple Checkboxes &nbsp;☑**: Check box list with the functionality to check multiple boxes at once by holding down shift key. The main thing which can be learned here from this exercise is how to write the logic to select multiple select boxes in one go. Modifications to the logic, can result in more precise selections.
+
+- *Day 11* - **Custom Video Player &nbsp;⏯**: Custom styled video player with functionalies like pause/play, volume increase/decrease, playback-speed increase/decrease, expand player, skip 10s ahead/behind. The key things which can be learned here are styling the video controls for a video player and achieving their respective functionalities using JS. Also, I learned that order of declaration of eventListeners matters, because certain events won't be fired if their order of attachment is incorrect.
