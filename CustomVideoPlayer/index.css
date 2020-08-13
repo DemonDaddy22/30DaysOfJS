@@ -15,7 +15,7 @@ body {
 
 .player {
     max-width: 750px;
-    border: 40px solid rgba(0, 0, 0, 0.2);
+    border: 10px solid rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.5), 0 0 50px rgba(255, 255, 255, 0.75);
     position: relative;
@@ -100,7 +100,7 @@ body {
 .progress-filled {
     width: 50%;
     background: #ffc600;
-    flex-basis: 50%;
+    flex-basis: 0;
 }
 
 /* css to style input type="range" */

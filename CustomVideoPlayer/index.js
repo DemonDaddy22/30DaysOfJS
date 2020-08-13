@@ -5,6 +5,7 @@ const progressBar = player.querySelector('.progress-filled');
 const toggle = player.querySelector('.toggle');
 const skipButtons = player.querySelectorAll('[data-skip]');
 const ranges = player.querySelectorAll('.player-slider');
+const fullScreen = player.querySelector('[data-screen]');
 
 // event listeners for toggling video
 video.addEventListener('click', togglePlay);
@@ -20,13 +21,22 @@ skipButtons.forEach(button => button.addEventListener('click', skip));
 // range update
 ranges.forEach(range => range.addEventListener('input', handleRangeUpdate));
 
-// update video progress bar
-video.addEventListener('timeupdate', handleProgress);
-progress.addEventListener('click', scrub);
-
 // key press events
 // arrow keys do not get detected on event type keypress for all the browsers, buy keydown works for every browser
 window.addEventListener('keydown', handleKeyPress);
+
+// full screen
+let expand = false;
+fullScreen.addEventListener('click', expandPlayer);
+
+// update video progress bar
+video.addEventListener('timeupdate', handleProgress);
+
+let mouseDown = false;
+progress.addEventListener('click', scrub);
+progress.addEventListener('mousedown', mouseDown = true);
+progress.addEventListener('mouseup', mouseDown = false);
+progress.addEventListener('mousemove', (e) => mouseDown && scrub(e));
 
 function togglePlay() {
     const mode = video.paused ? 'play' : 'pause';
@@ -56,8 +66,21 @@ function scrub(e) {
     video.currentTime = duration;
 }
 
+function expandPlayer() {
+    console.log(expand);
+    expand = !expand;
+    const width = expand ? '100vw' : 'inherit';
+    const maxWidth = expand ? 'inherit' : '750px';
+    const height = expand ? '100vh' : '';
+
+    player.style.width = width;
+    player.style.maxWidth = maxWidth;
+    player.style.height = height;
+}
+
 function handleKeyPress(e) {
     if (e.code === 'Space') togglePlay();
+    else if (e.code === 'KeyF') expandPlayer();
     else if (e.code === 'ArrowRight') video.currentTime += parseFloat(skipButtons[1].dataset.skip);
     else if (e.code === 'ArrowLeft') video.currentTime += parseFloat(skipButtons[0].dataset.skip);
     else if (e.code === 'ArrowUp') {
