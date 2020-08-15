@@ -4,6 +4,51 @@
 
 body {
     margin: 0;
-    background-color: #ffdb3c;
-    padding: 36px;
+    background-color: rgb(255, 219, 60);
+    padding: 150px;
+    color: #212121;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#container {
+    border-radius: 10px;
+    border: 1px solid rgba(255, 219, 60, 0.1);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    background-color: #FFFFFF;
+    flex: 1;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+}
+
+.align-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.align-right {
+    float: right;
+    margin-left: 20px;
+}
+
+.slide-in {
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+}
+
+.align-left.slide-in {
+    transform: scale(0.95) translateX(-30%);
+}
+
+.align-right.slide-in {
+    transform: scale(0.95) translateX(30%);
+}
+
+.active {
+    opacity: 1;
+    transform: scale(1) translateX(0%) !important;
 }
