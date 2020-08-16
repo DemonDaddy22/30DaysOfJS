@@ -48,7 +48,7 @@ h1 {
     transform: scale(0.95) translateX(30%);
 }
 
-.active {
+.slide-in.active {
     opacity: 1;
-    transform: scale(1) translateX(0%) !important;
+    transform: scale(1) translateX(0%);
 }
