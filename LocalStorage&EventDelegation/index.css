@@ -70,6 +70,7 @@ h2 {
 
 .items li {
     font-weight: 100;
+    font-size: 1.2rem;
     padding: 10px 0;
     display: flex;
     align-items: center;
@@ -82,11 +83,13 @@ h2 {
 }
 
 .items input+label:before {
+    cursor: pointer;
     content: "⬜️";
     margin-right: 10px;
 }
 
 .items input:checked+label:before {
+    cursor: pointer;
     content: "🌮";
 }
 
@@ -109,6 +112,11 @@ h2 {
     background-color: #212121;
     color: #ffffff;
     margin: 0 12px 0 0;
+}
+
+.add-items input[type='text']:focus {
+    background-color: #212121;
+    color: #ffffff;
 }
 
 .add-items input[type='submit'] {
