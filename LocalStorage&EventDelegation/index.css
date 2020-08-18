@@ -58,7 +58,7 @@ h2 {
     background-color: #ffffff;
     flex: 1;
     height: 1px;
-    margin: 16px 0;
+    margin: 16px 0 0 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
@@ -94,7 +94,7 @@ h2 {
 }
 
 .add-items {
-    margin-top: 20px;
+    margin-top: 16px;
     display: flex;
     align-items: center;
 }
@@ -129,4 +129,35 @@ h2 {
     cursor: pointer;
     transform: scale(1.01);
     background-color: rgba(181, 248, 73, 0.8);
+}
+
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 2px;
+    color: #FFFFFF;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0.95;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    opacity: 1;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #2286d8;
+}
+
+.btn-danger {
+    background-color: #cc2222;
 }
