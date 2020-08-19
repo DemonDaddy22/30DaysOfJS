@@ -33,3 +33,5 @@
 - *Day 15* - **LocalStorage & Event Delegation &nbsp;🏪**: A persistent items list which is connected to browser's localStorage. The key things which can be learned here are the browser's ```localStorage```, which can help in achieving persistence at client-side and event delegation, which is basically looking for elements which will be present on the page at the time of adding an event listener. Also, I went ahead and tried to mimic the frosty glass background style for the form.
 
 - *Day 16* - **Mouse Move Effect &nbsp;🖱**: Changing position of text shadow on changing mouse position. The key things which can be learned here are how to use the offset values to track the position of mouse and checking whether the event to which the event listener is added is not the same as the target element because that can reset the offset values, causing an issue in the intended functionality.
+
+- *Day 17* - **Sort Without Aricles &nbsp;↕**: Sorting a list of band names without considering the articles preceding the band names. 
