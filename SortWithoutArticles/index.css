@@ -1,0 +1,35 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background: url("https://source.unsplash.com/nDqA4d5NL0k/2000x2000");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bands {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+.bands li {
+    border-bottom: 1px solid #ffffff;
+    padding: 16px 0;
+}
+
+.bands li:first-child {
+    padding-top: 0;
+}
+
+.bands li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
