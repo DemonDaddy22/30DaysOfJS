@@ -34,4 +34,6 @@
 
 - *Day 16* - **Mouse Move Effect &nbsp;🖱**: Changing position of text shadow on changing mouse position. The key things which can be learned here are how to use the offset values to track the position of mouse and checking whether the event to which the event listener is added is not the same as the target element because that can reset the offset values, causing an issue in the intended functionality.
 
-- *Day 17* - **Sort Without Aricles &nbsp;↕**: Sorting a list of band names without considering the articles preceding the band names. 
+- *Day 17* - **Sort Without Aricles &nbsp;↕**: Sorting a list of band names without considering the articles preceding the band names.
+
+- *Day 18* - **Tally String Times &nbsp;🕒**: Extracting time from DOM, converting it to numbers and then finding out the sum total time. The result is then formatted to HH:MM:SS format.
