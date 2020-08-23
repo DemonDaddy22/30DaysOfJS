@@ -9,6 +9,60 @@
     </head>
 
     <body>
+        <div class="photobooth">
+            <div class="controls">
+                <button onClick="takePhoto()">Take Photo</button>
+                <div class="rgb">
+                    <div class="align-center">
+                        <label for="rmin">Red Min:</label>
+                        <input type="range" min=0 max=255 name="rmin">
+                    </div>
+
+                    <br>
+
+                    <div class="align-center">
+                        <label for="rmax">Red Max:</label>
+                        <input type="range" min=0 max=255 name="rmax">
+                    </div>
+
+                    <br><br>
+
+                    <div class="align-center">
+                        <label for="gmin">Green Min:</label>
+                        <input type="range" min=0 max=255 name="gmin">
+                    </div>
+
+                    <br>
+
+                    <div class="align-center">
+                        <label for="gmax">Green Max:</label>
+                        <input type="range" min=0 max=255 name="gmax">
+                    </div>
+
+                    <br><br>
+
+                    <div class="align-center">
+                        <label for="bmin">Blue Min:</label>
+                        <input type="range" min=0 max=255 name="bmin">
+                    </div>
+
+                    <br>
+
+                    <div class="align-center">
+                        <label for="bmax">Blue Max:</label>
+                        <input type="range" min=0 max=255 name="bmax">
+                    </div>
+                </div>
+            </div>
+            <canvas class="photo"></canvas>
+            <video class="player"></video>
+            <div class="strip"></div>
+        </div>
+
+        <canvas class="photo"></canvas>
+        <video class="player"></video>
+        <div class="strip"></div>
+        </div>
         <script type="text/javascript" src="index.js"></script>
     </body>
 

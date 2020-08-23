@@ -5,4 +5,95 @@
 body {
     margin: 0;
     background: #212121;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    color: #ffffff;
+    outline: none;
+    padding: 6px 10px;
+    background-color: #548bd3;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin: 16px;
+    transition: all ease-in-out 0.15s;
+}
+
+button:hover {
+    background-color: rgba(84, 139, 211, 0.75);
+    box-shadow: none;
+    cursor: pointer;
+}
+
+label {
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
+.rgb {
+    margin: 16px;
+}
+
+.photobooth {
+    background: rgba(255, 255, 255, 0.2);
+    max-width: 150rem;
+    margin: 2rem auto;
+    border-radius: 2px;
+}
+
+.photobooth:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.photo {
+    width: 100%;
+    float: left;
+}
+
+.player {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 200px;
+}
+
+.strip {
+    padding: 2rem;
+}
+
+.strip img {
+    width: 100px;
+    overflow-x: scroll;
+    padding: 0.8rem 0.8rem 2.5rem 0.8rem;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.strip a:nth-child(5n+1) img {
+    transform: rotate(10deg);
+}
+
+.strip a:nth-child(5n+2) img {
+    transform: rotate(-2deg);
+}
+
+.strip a:nth-child(5n+3) img {
+    transform: rotate(8deg);
+}
+
+.strip a:nth-child(5n+4) img {
+    transform: rotate(-11deg);
+}
+
+.strip a:nth-child(5n+5) img {
+    transform: rotate(12deg);
 }
