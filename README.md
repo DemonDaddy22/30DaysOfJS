@@ -47,3 +47,5 @@
 - *Day 22* - **Follow Along Links &nbsp;🏃**: Links with styling following the link we hover over. The key thing which can be learned here is how we can create an element using JS and dynamically move it over other elements using the dimensions of the underlying element (obtained by calling ```getBoundingRect()``` on the element).
 
 - *Day 23* - **Speech Synthesis &nbsp;💬**: Repeats the input sentence in the selected voice. The key things which can be learned here are the ```SpeechSynthesisUtterance```, which can be used to create a speech object containing what text to speak and what voice to be used for the same among some other properties too, and ```speechSynthesis```, which can be used to fetch list of available voices for the browser, and takes in an object of SpeechSynthesisUtterance to speak something.
+
+- *Day 24* - **Fixed Nav &nbsp;🔝**: Stick the navbar to the top of the page on scrolling. Just toggle a class using JS whenever window is scrolled beyond offsetY of navbar.
