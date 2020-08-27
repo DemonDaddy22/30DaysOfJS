@@ -49,3 +49,5 @@
 - *Day 23* - **Speech Synthesis &nbsp;💬**: Repeats the input sentence in the selected voice. The key things which can be learned here are the ```SpeechSynthesisUtterance```, which can be used to create a speech object containing what text to speak and what voice to be used for the same among some other properties too, and ```speechSynthesis```, which can be used to fetch list of available voices for the browser, and takes in an object of SpeechSynthesisUtterance to speak something.
 
 - *Day 24* - **Fixed Nav &nbsp;🔝**: Stick the navbar to the top of the page on scrolling. Just toggle a class using JS whenever window is scrolled beyond offsetY of navbar.
+
+- *Day 25* - **Event Capturing &nbsp;▶**: Understanding how event capturing (or bubbling) works and how it can be prevented using ```e.stopPropagation()```.
