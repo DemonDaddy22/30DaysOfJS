@@ -4,4 +4,24 @@
 
 body {
     margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+div {
+    padding: 100px;
+    width: 100%;
+    height: 100%;
+}
+
+.one {
+    background-color: steelblue;
+}
+
+.two {
+    background-color: cornflowerblue;
+}
+
+.three {
+    background-color: paleturquoise;
 }
