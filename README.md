@@ -51,3 +51,5 @@
 - *Day 24* - **Fixed Nav &nbsp;🔝**: Stick the navbar to the top of the page on scrolling. Just toggle a class using JS whenever window is scrolled beyond offsetY of navbar.
 
 - *Day 25* - **Event Capturing &nbsp;▶**: Understanding how event capturing (or bubbling) works and how it can be prevented using ```e.stopPropagation()```.
+
+- *Day 26* - **Stripe Dropdown &nbsp;🔽**: Animating dropdowns on hovering over navbar links. The key things which can be learned here are ```display: block``` and ```opacity: 1``` do not tend to animate together when trying to fade-in an element, so its better to add them using separate classes with some time gap, also the use of ```getBoundingClientRect()``` to get element's dimensions in order to dynamically change the dropdowns height, width and position.
