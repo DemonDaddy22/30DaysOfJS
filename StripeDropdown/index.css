@@ -11,15 +11,18 @@ body {
     background-image: linear-gradient(180deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
 
+ul {
+    list-style: none;
+}
+
 .navbar-links {
     width: 40%;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 24px auto;
+    justify-content: space-around;
+    margin: 24px auto 0;
     padding: 0;
-    list-style: none;
 }
 
 .navbar-links>li {
@@ -43,7 +46,7 @@ body {
     opacity: 0;
     position: absolute;
     overflow: hidden;
-    padding: 20px;
+    padding: 0 20px 40px;
     top: -20px;
     border-radius: 2px;
     transition: all 0.5s;
@@ -51,6 +54,9 @@ body {
     will-change: opacity;
     display: none;
 }
+
+/* display: block and opacity don't work together */
+/* better to put them in 2 different classes and call opacity after some delay for the animation of fading in */
 
 .trigger-enter .dropdown {
     display: block;
@@ -60,7 +66,7 @@ body {
     opacity: 1;
 }
 
-.dropdownBackground {
+.dropdown-bg {
     width: 100px;
     height: 100px;
     position: absolute;
@@ -74,7 +80,7 @@ body {
     opacity: 0;
 }
 
-.dropdownBackground.open {
+.dropdown-bg.open {
     opacity: 1;
 }
 
@@ -88,7 +94,7 @@ body {
 }
 
 .bio {
-    min-width: 500px;
+    width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,6 +104,8 @@ body {
 .bio img {
     float: left;
     margin-right: 20px;
+    height: 150px;
+    width: 150px;
 }
 
 .dropdown2 {
@@ -121,6 +129,7 @@ a.button {
     padding: 10px;
     color: white;
     margin-bottom: 10px;
+    border-radius: 4px;
 }
 
 /* Matches Twitter, TWITTER, twitter, tWitter, TWiTTeR... */
@@ -129,8 +138,8 @@ a.button {
     background: #d31d96;
 }
 
-.button[href*=facebook] {
-    background: #3B5998;
+.button[href*=linkedin] {
+    background: #4e83c9;
 }
 
 .button[href*=github] {
@@ -138,6 +147,7 @@ a.button {
     color: white;
 }
 
-.button[href*=portfolio] {
+.button[href*=shades-of-demon] {
     background: #ffc600;
+    color: #010101;
 }
