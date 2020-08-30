@@ -55,3 +55,5 @@
 - *Day 26* - **Stripe Dropdown &nbsp;🔽**: Animating dropdowns on hovering over navbar links. The key things which can be learned here are ```display: block``` and ```opacity: 1``` do not tend to animate together when trying to fade-in an element, so its better to add them using separate classes with some time gap, also the use of ```getBoundingClientRect()``` to get element's dimensions in order to dynamically change the dropdowns height, width and position.
 
 - *Day 27* - **Click and Drag &nbsp;↔**: Clicking and dragging to scroll a list of items. The key things which can be learned here are the use of mouse event listeners and the positioning of cursor on clicking and moving to achieve the desired functionality.
+
+- *Day 28* - **Video Playback Control &nbsp;⏭**: Custom Slider to adjust the playback rate of video player.
