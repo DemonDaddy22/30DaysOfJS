@@ -57,3 +57,5 @@
 - *Day 27* - **Click and Drag &nbsp;↔**: Clicking and dragging to scroll a list of items. The key things which can be learned here are the use of mouse event listeners and the positioning of cursor on clicking and moving to achieve the desired functionality.
 
 - *Day 28* - **Video Playback Control &nbsp;⏭**: Custom Slider to adjust the playback rate of video player.
+
+- *Day 29* - **Countdown Clock &nbsp;⌛**: A countdown timer which indicates the time left and the end time, with the functionality to choose from preset options or add custom minutes. The key things which can be learned here how to update time each second using ```setInterval()``` and clear any previous timers using ```clearInterval()```.
