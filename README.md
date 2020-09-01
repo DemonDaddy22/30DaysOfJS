@@ -59,3 +59,5 @@
 - *Day 28* - **Video Playback Control &nbsp;⏭**: Custom Slider to adjust the playback rate of video player.
 
 - *Day 29* - **Countdown Clock &nbsp;⌛**: A countdown timer which indicates the time left and the end time, with the functionality to choose from preset options or add custom minutes. The key things which can be learned here how to update time each second using ```setInterval()``` and clear any previous timers using ```clearInterval()```.
+
+- *Day 30* - **Whack a Mole &nbsp;🐭**: A simple game where a user is required to click on a mole which randomly pops up from a hole for a random time period.
