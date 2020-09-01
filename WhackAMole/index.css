@@ -12,9 +12,22 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 7rem;
+    font-size: 6rem;
+    text-transform: uppercase;
     line-height: 1;
     margin-bottom: 0;
+    position: relative;
+}
+
+h1:after {
+    text-align: center;
+    position: absolute;
+    content: 'WHACK-A-MOLE!';
+    text-transform: uppercase;
+    left: 255px;
+    top: 5px;
+    color: rgba(0, 0, 0, 0.05);
+    transform: skew(8deg, 5deg);
 }
 
 .btn-wrapper {
@@ -26,7 +39,7 @@ h1 {
 .start-game {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 16px 32px;
-    margin-top: 32px;
+    margin: 32px 0;
     color: #FFFFFF;
     font-size: 2rem;
     letter-spacing: 0.5px;
@@ -78,7 +91,7 @@ h1 {
 
 .mole {
     background: url('mole.svg') bottom center no-repeat;
-    background-size: 60%;
+    background-size: 55%;
     position: absolute;
     top: 100%;
     width: 100%;
